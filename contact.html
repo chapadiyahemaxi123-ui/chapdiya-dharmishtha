@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+    margin:0;
+    padding:0;
+}
+
+.contact-container{
+    width:50%;
+    margin:50px auto;
+    background:#fff;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+h2{
+    text-align:center;
+    color:#007bff;
+}
+
+.input-group{
+    margin-bottom:15px;
+}
+
+label{
+    display:block;
+    margin-bottom:5px;
+    font-weight:bold;
+}
+
+input, textarea{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:15px;
+}
+
+textarea{
+    height:120px;
+    resize:none;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#007bff;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#0056b3;
+}
+
+.contact-info{
+    text-align:center;
+    margin-bottom:20px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="contact-container">
+
+    <h2>Contact Us</h2>
+
+    <div class="contact-info">
+        <p><strong>Project:</strong> Phishing Detection System</p>
+        
+    </div>
+    <form action="/send" method="POST"><div class="input-group">
+    <label>Full Name</label>
+    <input type="text" name="name"
+           placeholder="Enter Your Name" required>
+</div>
+
+<div class="input-group">
+    <label>Email Address</label>
+    <input type="email" name="email"
+           placeholder="Enter Your Email" required>
+</div>
+
+<div class="input-group">
+    <label>Phone Number</label>
+    <input type="tel" name="phone"
+           placeholder="Enter Your Phone Number">
+</div>
+
+<div class="input-group">
+    <label>Suspicious URL</label>
+    <input type="url" name="url"
+           placeholder="Enter Suspicious URL">
+</div>
+
+<div class="input-group">
+    <label>Query Type</label>
+    <select name="query_type" required>
+        <option value="">Select Query Type</option>
+        <option value="Phishing Report">Phishing Report</option>
+        <option value="Suspicious URL Check">Suspicious URL Check</option>
+        <option value="Security Issue">Security Issue</option>
+        <option value="Bug Report">Bug Report</option>
+        <option value="Technical Support">Technical Support</option>
+        <option value="Feature Request">Feature Request</option>
+        <option value="Other">Other</option>
+    </select>
+</div>
+
+<div class="input-group">
+    <label>Message</label>
+    <textarea name="message"
+              placeholder="Write Your Message Here..."
+              required></textarea>
+</div>
+
+<button type="submit">Send Message</button>
+
+</form>
+   
+
+</div>
+
+</body>
+</html>
