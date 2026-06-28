@@ -1,1 +1,1 @@
-phish-guard-1--chapdiya.replit.app/
+phish-guard-1--chapdiya.replit.app
